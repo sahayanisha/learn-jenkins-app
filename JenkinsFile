@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     stages {
+        //commenting build stage for temporary , since it already built in jenkins env
+    /*
         stage('Build') {
             agent{
                 docker{
@@ -26,6 +28,7 @@ pipeline {
                 '''
             }
         }
+        */
         stage('Test'){
             agent{
                 docker{
